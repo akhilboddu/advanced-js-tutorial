@@ -1,4 +1,5 @@
-import { getDate, year as currentYear } from './utils/date.js';
+import getDateNow from './utils/date.js';
+import './utils/date.js';
 
 const year = 2019;
 // Modules - allow us to share code between files
@@ -9,7 +10,7 @@ class App {
   
   render() {
     document.getElementById('root').innerHTML = `
-      <div>Date: ${getDate()}, Year: ${currentYear}</div>
+      <div>Date: ${getDateNow()}</div>
     `
   }
 }
